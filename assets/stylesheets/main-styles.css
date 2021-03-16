@@ -1,0 +1,55 @@
+body {
+    margin: 0 ;
+    padding: 0 ;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 75px 1fr 100px;
+    
+}
+
+body {
+    background-color: black;
+    font-family: 'Cutive Mono', monospace;
+    color: lime;
+    text-align: center;
+}
+
+#introduction {
+    text-align: left;
+}
+
+#certification-grid a {
+    text-decoration: none;
+    color: lime;
+    font-size: 13px;
+}
+
+.certification-pad h3 {
+
+}
+
+.certification-pad i {
+    font-size: 50px;
+}
+
+
+
+
+
+
+
+/* <Test Colors- */
+#test-colors-div {
+    position: fixed;
+}
+
+#test-colors-btn {
+    background-color: black;
+    color: lime ;
+    border: none ;
+}
+
+#test-colors-btn:hover{
+    background-color: rgb(70, 70, 70);
+}
+/* -Test Colors> */

@@ -1,0 +1,44 @@
+:root{
+    --level1: #9268F7;
+    --level2: #5976D4;
+    --level3: #6ECBEB; 
+    --level4: #58D6B2;
+    --level5: #89F59A;
+    --level6: #D4DE81;
+    --level7: #F5E69A;
+    --level8: #DEBC81;
+    --level9: #FAAB7D;
+    --level10: #FA8790;
+}
+
+body{
+    background-color: var(--level9);
+}
+
+#main {
+    background-color: var(--level4);
+}
+
+#main header {
+    background-color: var(--level6);
+}
+
+#main main {
+    background-color: var(--level5);
+}
+
+#img-figure {
+    background-color: var(--level2);
+}
+
+#tribute-info {
+    background-color: var(--level2);
+}
+
+#quote {
+    background-color: var(--level2);
+}
+
+#main footer {
+    background-color: var(--level10);
+}

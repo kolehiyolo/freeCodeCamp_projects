@@ -1,0 +1,53 @@
+:root{
+    --level1: #9268F7;
+    --level2: #5976D4;
+    --level3: #6ECBEB; 
+    --level4: #58D6B2;
+    --level5: #89F59A;
+    --level6: #D4DE81;
+    --level7: #F5E69A;
+    --level8: #DEBC81;
+    --level9: #FAAB7D;
+    --level10: #FA8790;
+}
+
+body{
+    background-color: var(--level1);
+    color: black;
+}
+
+header {
+    background-color: var(--level2);
+    color: black;
+}
+
+main {
+    background-color: var(--level4);
+    color: black;
+}
+
+#introduction {
+    background-color: var(--level5);
+}
+
+#introduction h2, #introduction p {
+    background-color: var(--level7);
+}
+
+#certification-grid {
+    background-color: var(--level5);
+}
+
+.certification-pad {
+    background-color: var(--level9);
+}
+
+.certification-pad h3 {
+    background-color: var(--level3);
+    color: black;
+}
+
+footer {
+    background-color: var(--level3);
+    color: black;
+}

@@ -1,0 +1,13 @@
+@media (max-width:460px) {
+    #main {
+        margin: 0 ;
+    }
+
+    #title {
+        font-size: 35px ;
+    }
+
+    #img-caption {
+        font-size: 14px ;
+    }
+}
