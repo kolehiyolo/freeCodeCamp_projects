@@ -2,16 +2,21 @@
 #test-colors-div {
     position: fixed;
     top:0;
-    left:0;
+    right:0;
 }
 
-#test-colors-btn {
+#test-colors-btn, #go-home {
     background-color: black;
     color: lime ;
     border: none ;
 }
 
-#test-colors-btn:hover{
+#go-home a {
+    color: lime ;
+    text-decoration: none ;
+}
+
+#test-colors-btn:hover, #go-home:hover{
     background-color: rgb(70, 70, 70);
 }
 /* -Test Colors> */

@@ -1,0 +1,17 @@
+@media (max-width:768px) {
+    main, header {
+        width: 540px ;
+    }
+}
+
+@media (max-width:576px) {
+    main, header {
+        width: 100% ;
+    }
+}
+
+@media (max-width:480px) {
+    #survey-form {
+        padding: 45px 20px 65px ;
+    }
+}

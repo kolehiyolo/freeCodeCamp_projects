@@ -1,0 +1,92 @@
+/* <Test Colors- */
+#test-colors-div {
+    position: fixed;
+    top:0;
+    right:0;
+}
+
+#test-colors-btn, #go-home {
+    background-color: black;
+    color: lime ;
+    border: none ;
+}
+
+#go-home a {
+    color: lime ;
+    text-decoration: none ;
+}
+
+#test-colors-btn:hover, #go-home:hover{
+    background-color: rgb(70, 70, 70);
+}
+/* -Test Colors> */
+
+/* <HTML and Body- */
+body {
+    margin: 0 ;
+}
+
+.zero-margin {
+    margin: 0 ;
+}
+
+/* -HTML and Body> */
+
+/* <Header- */
+header {
+    box-sizing: border-box ;
+    width: 720px ;
+    margin: 0 auto ;
+    padding: 50px 25px 25px ;
+    border-radius: 5px ;
+}
+/* -Header> */
+
+/* <Main- */
+main {
+    width: 720px ;
+    margin: 0 auto ;
+    border-radius: 5px ;
+}
+
+#survey-form {
+    box-sizing: border-box ;
+    padding: 45px 45px 65px;
+}
+
+.field p {
+    margin: 0 ;
+    padding: 7.5px 0 ;
+}
+
+.text-field {
+    box-sizing: border-box ;
+    width: 100% ;
+    padding: 5px 12px ;
+    margin-bottom: 20px ;
+    border: none ;
+    border-radius: 2.5px ;
+}
+
+#radio-label input, #checkbox-label input {
+    transform: scale(1.5);
+    margin-bottom: 15px ;
+}
+
+#radio-label span, #checkbox-label span {
+    margin: 0 5px ;
+}
+
+#textarea {
+    width: 100% ;
+    min-height: 125px ;
+    resize: vertical ;
+}
+
+#submit {
+    width: 100% ;
+    padding: 10px 0 ;
+    border: none ;
+    border-radius: 2.5px ;
+}
+/* -Main> */
