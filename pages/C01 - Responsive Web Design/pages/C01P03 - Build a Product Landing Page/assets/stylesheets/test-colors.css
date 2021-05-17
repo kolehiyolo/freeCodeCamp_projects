@@ -1,0 +1,96 @@
+:root{
+    --level1: #9268F7;
+    --level2: #5976D4;
+    --level3: #6ECBEB; 
+    --level4: #58D6B2;
+    --level5: #89F59A;
+    --level6: #D4DE81;
+    --level7: #F5E69A;
+    --level8: #DEBC81;
+    --level9: #FAAB7D;
+    --level10: #FA8790;
+}
+
+body {
+    background-color: var(--level1) ;
+}
+
+#header {
+    background-color: var(--level2);
+}
+
+main {
+    background-color: var(--level3);
+}
+
+footer {
+    background-color: var(--level2);
+}
+
+#header-img {
+    background-color: var(--level5);
+}
+
+#img-div {
+    background-color: var(--level3);
+}
+#nav-bar {
+    background-color: var(--level4);
+}
+
+#form {
+    background-color: var(--level6);
+}
+
+#features {
+    background-color: var(--level4);
+}
+
+.feature {
+    background-color: var(--level5);
+}
+
+.feature img {
+    background-color: var(--level6);
+}
+
+.feature-text {
+    background-color: var(--level2);
+}
+
+#pricing {
+    background-color: var(--level4);
+}
+
+.pricing-card {
+    background-color: var(--level5);
+}
+
+.pricing-card h2 {
+    background-color: var(--level2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

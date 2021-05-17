@@ -1,0 +1,316 @@
+/* <Default Override-*/
+body {
+    /* This is to set the page's grid layout */
+    /* The three grid rows are for the header, the main, and the footer sections */
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+body {
+    /* This is to override the height and make sure it always fills the screen regardless of the content */
+    /* This way, the footer will always be on the very bottom of the screen without the need for position:absolute */
+    /* The margins and the paddings are also set to 0 because of course I have to */
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /* Not quite sure why I did this lol */
+    font-family: 'Open Sans', sans-serif;
+    background-color: #EEEEEE;   
+}
+/* -Default Override> */
+
+/* < header - */
+#header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: #EEEEEE;
+    z-index: 5;
+}
+
+#header {
+    /* display: none; */
+}
+
+/* <These two CSS are the size designation for the two flex items- */
+#img-div {
+    flex-grow: 1;
+    flex-basis: 0px;
+    padding-left: 60px;
+}
+
+#nav-bar {
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+/* -These two CSS are the size designation for the two flex items> */
+
+#header-img {
+    /* This is to resize the logo image to the right size */
+    /* The {display:block} is to make sure there is no extra padding added on the bottom of the image */
+    /*
+    ref: https://stackoverflow.com/questions/17771230/img-has-5px-extra-padding-at-bottom-of-div
+    */
+    max-width: 300px;
+    display: block;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#nav-bar a {
+    /* This is to override the default link styling */
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+/* - header > */
+
+/* < #header-shadow - */
+#header-shadow {
+    /* position: fixed; */
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    background-color: sandybrown;   
+}
+
+#header-shadow {
+    /* display: none; */
+}
+
+#img-div-shadow {
+    flex-grow: 1;
+    flex-basis: 0px;
+    padding-left: 60px;
+}
+
+#nav-bar-shadow {
+    flex-grow: 1;
+    flex-basis: 0px;
+}
+
+#header-img-shadow {
+    max-width: 300px;
+    display: block;
+}
+
+#nav-bar-shadow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#nav-bar-shadow a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+/* - #header-shadow ! */
+
+/* < main - */
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* << #form-section -- */
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email-label {
+    text-align: center;
+}
+
+#email {
+    width: 250px;
+    padding: 5px;
+}
+
+#submit {
+    background-color: gold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    width: 150px;
+    margin: 20px auto;
+}
+/* -- #form-section >> */
+
+/* << #features -- */
+#features {
+    display: grid;
+    grid-area: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 70px 20px;
+}
+
+.feature {
+    display: flex;
+}
+
+.feature-img {
+    /* The flex property is this way to ensure that the set width will always be respected */
+    /* The padding is simply to give the icons much needed space in the horizontal */
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#features img {
+    width: 65px;
+}
+
+.feature-text h2, .feature-text p {
+    /* These properties override the default while also giving the elements inside more room to breath */
+    margin: 0;
+    padding: 0 0 0 10px;
+}
+
+.feature-text p {
+    font-size: 15px;
+}
+
+.svg-filter-orange {
+    filter: invert(52%) sepia(72%) saturate(1417%) hue-rotate(360deg) brightness(102%) contrast(104%);
+}
+/* -- #features >> */
+
+/* << #how-it-works -- */
+/* <<< .iframe-container --- */
+#how-it-works {
+    max-width: 550px;
+    margin: 0 auto;
+}
+/* These two CSS is something that I just got from a YouTube vid lol so I don't quite know YET how it works */
+/* I'll be sure to look into it tho */
+/* ref: https://www.youtube.com/watch?v=9YffrCViTVk */
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+}
+
+.iframe-container iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/* --- .iframe-container >>> */
+/* -- #how-it-works >> */
+
+/* << #pricing -- */
+#pricing {
+    display: flex;
+    justify-content: space-between;
+}
+
+#pricing {
+    padding: 50px 0;
+}
+
+.pricing-card {
+    /* The two flex properties below are required so that all the pricing cards will have the same widths */
+    /* Apparently you need to first set the flex-basis property to 0 otherwise flex-grow wouldn't give all items the same width (so dumb) */
+    /* ref: https://stackoverflow.com/questions/29503227/how-to-make-flexbox-items-the-same-size */
+    flex-grow: 1;
+    flex-basis: 0px;
+    border: 1px black solid;
+    margin: 10px;
+}
+
+.pricing-card {
+    text-align: center;
+}
+
+.pricing-card h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.pricing-card h2 {
+    background-color: #dddddd;
+}
+
+.pricing-card h3 {
+    font-size: 25px;
+    margin: 20px;
+}
+
+.pricing-card p {
+    font-size: 15px;
+    margin: 10px;
+}
+
+#pricing button {
+    background-color: gold;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    font-weight: 400;
+    font-size: 18px;
+    width: 100px;
+    padding: 5px;
+    margin: 20px auto;
+}
+/* -- #pricing >> */
+/* - main > */
+
+/* < footer - */
+footer {
+    max-width: 1000px; 
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+footer {
+    background-color: #dddddd;
+}
+
+/* #footer-links {
+    display: flex;
+    justify-content: flex-end;
+} */
+
+footer a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    margin: 0 10px;
+}
+
+#copyright p {
+    display: inline-block;
+    margin: 0;
+}
+
+#copyright p {
+    font-size: 15px;
+    color: #444466;
+}
+
+/* - footer > */

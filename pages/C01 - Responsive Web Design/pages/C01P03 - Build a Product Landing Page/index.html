@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <!-- Commit #1 : 'Project Initialization' -->
+
+    <!-- <Meta- -->
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- -Meta> -->
+
+    <!-- <Stylesheets- -->
+    <link rel='stylesheet' href='assets/stylesheets/fonts-and-colors.css'>
+    <link rel='stylesheet' href='assets/stylesheets/main-styles.css'>
+    <link rel='stylesheet' href='assets/stylesheets/trial-and-error.css'>
+    <link rel='stylesheet' href='assets/stylesheets/media-query.css'>
+    <!-- <link id='test-colors-css' rel='stylesheet' href='assets/stylesheets/test-colors.css'> -->
+    <link id='test-colors-css' rel='stylesheet' href=''>
+    <!-- -Stylesheets> -->
+
+    <!-- <jQuery CDN- -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <!-- -jQuery CDN> -->
+
+    <!-- <Google Fonts- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- -Google Fonts> -->
+
+    <!-- <Document Title- -->
+    <title>freeCodeCamp [C01P03] - Build a Product Landing Page</title>
+    <!-- -Document Title> -->
+
+    <!-- < This is just dummy styling since the freeCodeCamp tester can't detect Media Queries and {display:flex} properties outside of this html file for some reason. Believe me I've tried - -->
+    <style>
+        @media (max-width:2000px){
+            #nothing {
+                display: none;
+            }
+        }
+        
+        #nothing {
+            display: flex;
+        }
+    </style>
+    <!-- - This is just dummy styling since the freeCodeCamp tester can't detect Media Queries and {display:flex} properties outside of this html file for some reason. Believe me I've tried ! -->
+</head>
+
+<body> 
+    <!-- <Header- -->
+    <header id="header">
+        <!-- This is the website logo -->
+        <div id="img-div">
+            <img id="header-img" src="https://i.imgur.com/wtn2P3k.png"
+                alt="original-trombones-company-logo-img">
+        </div>
+        <!-- This is the navbar -->
+        <nav id="nav-bar">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#how-it-works" class="nav-link">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </nav>
+    </header>
+    <!-- -Header> -->
+
+    <!-- <--- Header Shadow ---- -->
+    <header id="header-shadow">
+        <!-- This is the website logo -->
+        <div id="img-div-shadow">
+            <img id="header-img-shadow" src="https://i.imgur.com/wtn2P3k.png"
+                alt="original-trombones-company-logo-img-shadow">
+        </div>
+        <!-- This is the navbar -->
+        <nav id="nav-bar-shadow">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#pricing">Pricing</a>
+        </nav>
+    </header>
+    <!-- ---- Header Shadow ---! -->
+
+    <!-- <Main- -->
+    <main>
+        <section id="form-section">
+            <form id="form" action="https://www.freecodecamp.com/email-submit">
+                <label id="email-label">
+                    <!-- <h1>Handcrafted, home-made masterpieces</h1> -->
+                    <h1>MAKE SURE THE HEADER FLOATS</h1>
+                    <input id="email" type="email" placeholder="Enter your email address" name="email">
+                </label>
+                <input id="submit" type="submit" value="Get Started">
+            </form>
+        </section>
+
+        <section id="features">
+            <div id="feature-1" class="feature">
+                <div id="feature-img-1" class="feature-img">
+                    <img src="assets/icons/Trophy [24px].svg" alt="feature-premium-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-1" class="feature-text">
+                    <h2>Premium Materials</h2>
+                    <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity
+                        of your purchase.</p>
+                </div>
+            </div>
+            <div id="feature-2" class="feature">
+                <div id="feature-img-2" class="feature-img">
+                    <img src="assets/icons/Local Shipping [24px].svg" alt="feature-shipping-icon"
+                        class="svg-filter-orange">
+                </div>
+                <div id="feature-text-2" class="feature-text">
+                    <h2>Fast Shipping</h2>
+                    <p>We make sure you receive your trombone as soon as we have finished making it. We also provide
+                        free returns if you are not satisfied.</p>
+                </div>
+            </div>
+            <div id="feature-3" class="feature">
+                <div id="feature-img-3" class="feature-img">
+                    <img src="assets/icons/Verified [24px].svg" alt="feature-verified-icon" class="svg-filter-orange">
+                </div>
+                <div id="feature-text-3" class="feature-text">
+                    <h2>Quality Assurance</h2>
+                    <p>For every purchase you make, we will ensure there are no damages or faults and we will check and
+                        test the pitch of your instrument.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-it-works">
+            <div class="iframe-container">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="pricing">
+            <div id="pricing-card-1" class="pricing-card">
+                <h2>Tenor Trombone</h2>
+                <div>
+                    <h3>$600</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-2" class="pricing-card">
+                <h2>Bass Trombone</h2>
+                <div>
+                    <h3>$900</h3>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+            <div id="pricing-card-3" class="pricing-card">
+                <h2>Valve Trombone</h2>
+                <div>
+                    <h3>$1200</h3>
+                    <p>Plays similar to a Trumpet</p>
+                    <p>Great for Jazz Bands</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button>Select</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- -Main> -->
+
+    <!-- <Footer- -->
+    <footer>
+        <div id="footer-links">
+            <a href="https://en.wikipedia.org/wiki/Privacy" target="_blank">Privacy</a>
+            <a href="https://en.wikipedia.org/wiki/Contact_mechanics" target="_blank">Terms</a>
+            <a href="https://en.wikipedia.org/wiki/Terminology" target="_blank">Contact</a>
+        </div>
+        <div id="copyright">
+            <p>&#169 Copyright 2016,</p>
+            <p>Original Trombones</p>
+        </div>
+    </footer>
+    <!-- -Footer> -->
+
+    <!-- -----*-----*-----*-----*-----*-----*----- -->
+
+    <!-- <freeCodeCamp Test Script- -->
+    <script id="test-script" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <!-- -freeCodeCamp Test Script> -->
+
+    <!-- <Test-Colors Div- -->
+    <div id="test-colors-div">
+        <button id="test-colors-btn">test-colors</button>
+        <button id="go-home"><a href="../../index.html">go-home</a></button>
+        <button id="fcc-rules"><a
+                href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-product-landing-page"
+                target="_blank">rules</a></button>
+        <button id="fcc-sample"><a href="https://codepen.io/freeCodeCamp/full/RKRbwL"
+                target="_blank">sample</a></button>
+        <script src="assets/javascript/test-colors.js"></script>
+    </div>
+    <!-- -Test-Colors Div> -->
+</body>
+
+</html>
