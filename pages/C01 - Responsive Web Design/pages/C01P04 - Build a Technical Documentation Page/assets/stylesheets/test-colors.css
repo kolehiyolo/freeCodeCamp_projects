@@ -14,3 +14,47 @@
 body {
     background-color: var(--level1) ;
 }
+
+/* < #navbar - */
+#navbar {
+    background-color: var(--level2) ;
+} 
+
+#navbar-header  {
+    background-color: var(--level3) ;
+} 
+#navbar-menu {
+    background-color: var(--level4) ;
+} 
+
+/* - #navbar ! */
+
+/* < #main-doc - */
+#main-doc {
+    background-color: var(--level3) ;
+} 
+
+.main-section {
+    background-color: var(--level4) ;
+} 
+
+.main-section-header {
+    background-color: var(--level5) ;
+}
+
+.main-section-content {
+    background-color: var(--level9) ;
+} 
+
+.main-section-content p {
+    background-color: var(--level6) ;
+} 
+
+.main-section-content li {
+    background-color: var(--level7) ;
+} 
+
+.code-div {
+    background-color: var(--level8) ;
+} 
+/* - #main-doc ! */

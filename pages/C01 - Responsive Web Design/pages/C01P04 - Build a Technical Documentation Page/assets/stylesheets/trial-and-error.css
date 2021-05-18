@@ -1,0 +1,138 @@
+/* < #clear-defaults - */
+* {
+    /* Just gettin rid of all them spacing */
+    margin: 0;
+    padding: 0;
+}
+/* - #clear-defaults ! */
+
+/* < #navbar - */
+#navbar {
+    /* This CSS is for the fixed position and for the scrolling overflow */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* overflow: scroll; */
+}
+
+#navbar {
+    /* I decided that the navbar be a column flexbox */
+    display: flex;
+    flex-direction: column;
+} 
+
+#navbar-menu {
+    /* The navbar menu should also be a column flexbox as the children elements don't get vertical otherwise */
+    display: flex;
+    flex-direction: column;
+} 
+
+#navbar {
+    /* I've been mulling this over and I sincerely hate that there's no clear solution out there for formatting elements that surround a fixed element */
+    /* I really wanted that the surrounding elements adjust their margin/padding depending on the dynamic size of the fixed element, but yeah all signs point to the sad fact that you can't do it without making a shadow copy that is not fixed or by doing some JavaScript crap */
+    /* Suffice it to say, the only solution is to set an absolute length then provide margin/padding to the surrounding elements accordingly, and thats what I'm doing here */
+    width: 300px;
+} 
+
+#navbar {
+    /* The border is clearly for that boundary between the navbar and the content */
+    /* The height is to make sure that the navbar fills the height of the screen */
+    border-right: solid 3px black;
+    height: 100vh;
+} 
+
+#navbar-header {
+    padding: 15px 35px;
+}
+
+#navbar-menu a {
+    padding: 15px 35px;
+    border-top: solid 1px black;
+}
+/* - #navbar ! */
+
+
+/* < #main-doc - */
+#main-doc {
+    /* The margin-left is to keep this element away from the navbar, which imo is a shoddy workaround for the problem I highlighted above with the whole formatting around a fixed element but yeah apparently this is the norm*/
+    /* The padding is of course to keep the elements from being too near to the border*/
+    margin-left: 300px;
+    padding: 40px;
+}
+
+#main-doc h2, #main-doc p, #main-doc ul, #main-doc li,.code-div  {
+    /* I found that setting the margin for all elements within the #main-doc is the best solution to keep them spaced, but I realized that doing "#main-doc *" is not a good idea because classes then become unusable */
+    margin-bottom: 20px;
+}
+
+.main-section {
+    /* This is meant to add more spacing between the sections */
+    margin-bottom: 30px;
+} 
+
+.main-section-content {
+    /* I added this after noticing that the actual section content is indented a little more to the right than the section headers */
+    margin-left: 20px; 
+}
+
+#main-doc ul {
+    /* This is to indent the lists to the right */
+    padding-left: 50px;
+}
+
+.code-div {
+    /* This is a rather janky solution to the code element formatting problem that I am experiencing*/
+    /* Essentially, for some reason, no CSS identifer that isn't drastic can be used to take the wheel with these elements away from the * CSS that I used at the very top */
+    /* So I instead decided to wrap code elements that are bunched, which actually made things easier */
+    padding: 20px;
+    margin-left: 15px;
+}
+
+#main-doc li {
+    /* I noticed that the on the nested list under #Data_types, the first nested <li> is too close to parent <li> */
+    /* This little property makes sure that that is not the case and will always be the case if nested lists are to be added, and this doesn't affect the already immaculate layout of the rest*/    
+    margin-top: 20px;
+} 
+
+/* - #main-doc ! */
+
+/* < fonts and colors and shit - */
+/* < #body - */
+body {
+    font-family: sans-serif;
+    color: rgb(65, 64, 64);
+}
+
+h1, h2 {
+    color: black;
+}
+/* - #body ! */
+
+/* < #navbar - */
+#navbar-header h1 {
+    font-weight: normal;
+    font-size: 28px;
+}
+
+#navbar a {
+    /* This is to ensure that the navbar links don't look archaic */
+    color: black;
+    text-decoration: none;
+}
+/* - #navbar ! */
+
+/* < #main-doc - */
+#main-doc h2 {
+    font-weight: normal;
+    font-size: 28px;
+}
+.code-div {
+    background-color: #F7F7F7;
+} 
+
+#main-doc * {
+    font-size: 15px;
+}
+/* - #main-doc ! */
+
+/* - fonts and colors and shit ! */
