@@ -1,0 +1,7 @@
+/* < #media-query-template - */
+@media (max-width:650px) {
+    object {
+        display: none;
+    }
+}
+/* - #media-query-template ! */

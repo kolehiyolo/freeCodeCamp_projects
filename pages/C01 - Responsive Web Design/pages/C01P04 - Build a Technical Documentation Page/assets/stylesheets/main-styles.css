@@ -1,0 +1,23 @@
+/* < #project-macros-div - */
+#project-macros-div {
+    position: fixed;
+    top:0;
+    right:0;
+    z-index: 10;
+}
+
+#test-colors-btn, #go-home-btn, #fcc-rules-btn, #fcc-sample-btn {
+    background-color: black;
+    color: lime ;
+    border: none ;
+}
+
+#go-home-btn a, #fcc-rules-btn a, #fcc-sample-btn a {
+    color: lime ;
+    text-decoration: none ;
+}
+
+#test-colors-btn:hover, #go-home-btn:hover, #fcc-rules-btn:hover, #fcc-sample-btn:hover{
+    background-color: rgb(70, 70, 70);
+}
+/* - #project-macros-div ! */
