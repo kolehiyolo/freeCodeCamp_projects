@@ -1,0 +1,71 @@
+/* < header - */
+#navbar {
+    background-color: #BE3144;
+}
+
+#navbar a {
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+/* - header ! */
+
+/* < main - */
+/* <- #welcome-section -- */
+#welcome-section {
+    /* This creates the dope gradient backgrounnd for this section */
+    background-image: linear-gradient(225deg, #0F0E10, #3A3D40);
+}
+
+#welcome-msg h1 {
+    /* This styling is for "Hey I am Mimic" */
+    font-size: 55px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#welcome-msg h2 {
+    /* This styling is for "a web developer" */
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    color: #BE3144;
+}
+/* -- #welcome-section -! */
+/* <- #projects -- */
+#projects {
+    /* This is for the #projects section */
+    text-align: center;
+    background-color: #45567D;
+}
+
+#projects h2 {
+    /* This is the stlying for "These are some of my projects" */
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+/* <-- #projects-grid --- */
+#projects-grid h3 {
+    /* This is the styling for the tile text */
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- #projects-grid --! */
+
+#more-projects-btn {
+    /* This is the styling for the "Show all" button */
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    background-color: #303841;
+    color: white;
+}
+/* -- #projects -! */
+/* - main ! */
+
+/* < footer - */
+
+/* - footer ! */

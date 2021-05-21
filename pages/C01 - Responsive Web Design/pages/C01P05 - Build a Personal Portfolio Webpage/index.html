@@ -3,7 +3,7 @@
 
 <head>
     <!-- Commit #1 : 'Project Initialization' -->
-    <!-- 2021/05/18 15:12 -->
+    <!-- 2021/05/21 11:18 -->
 
     <!-- < Meta - -->
     <meta charset='UTF-8'>
@@ -16,6 +16,7 @@
     <link rel='stylesheet' href='assets/stylesheets/main-styles.css'>
     <link rel='stylesheet' href='assets/stylesheets/trial-and-error.css'>
     <link rel='stylesheet' href='assets/stylesheets/media-query.css'>
+    <link rel='stylesheet' href='assets/stylesheets/transitions.css'>
     <link id='test-colors-css' rel='stylesheet' href='assets/stylesheets/test-colors.css'>
     <!-- <link id='test-colors-css' rel='stylesheet' href=''> -->
     <!-- - Stylesheets ! -->
@@ -25,39 +26,147 @@
     <!-- - jQuery CDN ! -->
 
     <!-- < Google Fonts - -->
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- - Google Fonts ! -->
 
     <!-- < Document Title - -->
-    <title>freeCodeCamp [C01P04] - Build a Technical Documentation Page</title>
+    <title>freeCodeCamp [C01P05] - Build a Personal Portfolio Webpage</title>
     <!-- - Document Title ! -->
 
+    <!-- < Dummy Styling - -->
+    <style>
+        @media screen and (max-width:1px) {
+            #nothing {
+                display: none;
+            }
+        }
+    </style>
+    <!-- - Dummy Styling ! -->
 </head>
 
 <body>
+    <!-- < #header - -->
+    <header>
+        <nav id="navbar">
+            <a href="#welcome-section">About</a>
+            <a href="#projects">Work</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <!-- - #header ! -->
 
+    <!-- < #main - -->
+    <main>
+        <section id="welcome-section">
+            <div id="welcome-msg">
+                <h1>Hey I am Mimic</h1>
+                <h2>a web developer</h2>
+            </div>
+        </section>
+        <section id="projects">
+            <h2>These are some of my projects</h2>
+            <hr>
+            <div id=projects-grid>
+                <div id="project-tribute-page" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-1" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Tribute Page</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-random-quote-machine" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-2" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Random Quote Machine</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-javascript-calculator" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-3" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>JavaScript Calculator</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-map-data-across-the-globe" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-4" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Map Data Across the Globe</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="project-wikipedia-viewer" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-5" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Wikipedia Viewer</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+                <div id="tic-tac-toe-game" class="project-tile">
+                    <a href="https://www.google.com" target="_blank">
+                        <div id="project-tile-img-6" class="project-tile-img"></div>
+                        <div class="project-tile-title">
+                            <div class="tile-quotes">&lt;</div>
+                            <h3>Tic Tac Toe Game</h3>
+                            <div class="tile-quotes">/></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <button id="more-projects-btn">Show all ></button>
+        </section>
+        <section id="contact">
+            <div id="contact-wrapper">
+                <h2>Let's work together...</h2>
+                <h3>How do you take your coffee?</h3>
+            </div>
+            <div id="socials">
+                <a href="">Facebook</a>
+                <a id="profile-link" href="https://github.com/kolehiyolo" target="_blank">GitHub</a>
+                <a href="">Twitter</a>
+                <a href="">Send a mail</a>
+                <a href="">Call me</a>
+            </div>
+        </section>
+    </main>
+    <!-- - #main ! -->
 
-    <!-- -----*-----*-----*-----*-----*-----*----- -->
-    <!-- < freeCodeCamp Project Template - -->
+    <!-- < #footer - -->
+    <footer>
+        <div id="footer-items">
+            <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+            <div id="copyright">
+                <p>&#169 Created for freeCodeCamp</p>
+            </div>
+        </div>
+    </footer>
+    <!-- - #footer ! -->
 
-    <!-- <- freeCodeCamp Test Script -- -->
-    <script id="test-script" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-    <!-- -- freeCodeCamp Test Script -! -->
-
-    <!-- <- Project Macros Div -- -->
-    <div id="project-macros-div">
-        <button id="test-colors-btn">test-colors</button>
-        <button id="go-home-btn"><a href="../../index.html">go-home</a></button>
-        <button id="fcc-rules-btn"><a
-                href="https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-technical-documentation-page"
-                target="_blank">rules</a></button>
-        <button id="fcc-sample-btn"><a href="https://codepen.io/freeCodeCamp/full/NdrKKL"
-                target="_blank">sample</a></button>
-        <script src="assets/javascript/test-colors.js"></script>
-    </div>
-    <!-- -- Project Macros Div -! -->
-
-    <!-- - freeCodeCamp Project Template ! -->
+    <!-- < #project-macros-script - -->
+    <script id="project-macros-script" src="../../../../assets/project-macros/project-macros.js"></script>
+    <!-- - #project-macros-script ! -->
 </body>
 
 </html>

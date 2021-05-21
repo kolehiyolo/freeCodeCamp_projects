@@ -1,0 +1,195 @@
+/* < #defaults - */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+#fonts {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* - #defaults ! */
+
+/* < main - */
+/* <- #welcome-section -- */
+/* -- #welcome-section -! */
+
+/* <- #projects -- */
+/* -- #projects -! */
+
+
+
+/* - main ! */
+
+/* < #footer - */
+footer {
+    height: 100px;
+}
+
+footer {
+    background-color: #303841;
+}
+
+footer {
+    border-top: #BE3144 solid 5px;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* - #footer ! */
+#project-tile-img-1 {
+    background-image: url("https://cdn.vox-cdn.com/thumbor/HyOhm280EOQO2ubcOZCSONkDGb8=/0x0:1200x675/1200x800/filters:focal(504x242:696x434)/cdn.vox-cdn.com/uploads/chorus_image/image/68567666/Dr._STONE_Season_2_release_date_Episode_24_ending_with_Stone_Wars_Dr._STONE_manga_compared_to_the_anime_Spoilers.0.jpg");
+}
+
+#project-tile-img-2 {
+    background-image: url("https://jw-webmagazine.com/wp-content/uploads/2020/03/Kimetsu-no-YaibaDemon-Slayer.jpg");
+}
+
+#project-tile-img-3 {
+    background-image: url("https://assets3.thrillist.com/v1/image/2855068/1200x630/flatten;crop_down;jpeg_quality=70");
+}
+
+#project-tile-img-4 {
+    background-image: url("https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/puhdljbrxn6drqz1_1612867589.jpeg?tr=w-758,h-433");
+}
+
+#project-tile-img-5 {
+    background-image: url("https://static.fandomspot.com/images/10/9546/00-featured-monkey-d-luffy-one-piece-anime.jpg");
+}
+
+#project-tile-img-6 {
+    background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2018/09/coming_to_netflix_in_october_2018-_the_seven_deadly_sins-_revival_of_the_commandments-publicity_-production_still-_h_2018.jpg");
+}
+
+.tile-quotes {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.project-tile-title h3 {
+    display: inline-block;
+}
+
+#projects-grid a {
+    text-decoration: none;
+}
+
+.project-tile {
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.tile-quotes {
+    opacity: 0;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.project-tile:hover .tile-quotes{
+    opacity: 1;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.project-tile-title {
+    background-color: #303841;
+}
+
+.project-tile-title h3 {
+    color: white;
+}
+
+.tile-quotes {
+    color: rgb(221, 119, 50);
+}
+
+/* <- #contact -- */
+#contact {
+    position: relative;
+    height: calc(100vh - 175px);
+}
+
+#contact-wrapper {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#socials {
+    position: absolute;
+    top: 57.5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+#socials a {
+    padding: 0 10px;
+}
+
+#socials a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+#contact h3 {
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 300;
+    color: white;
+}
+
+#contact h2 {
+    font-size: 61px;
+    font-family: 'Raleway', sans-serif;
+    color: white;
+}
+
+#contact {
+    background-color: #303841;
+}
+
+/* -- #contact -! */
+
+/* < footer - */
+footer {
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#footer-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1250px;
+}
+
+#footer-items p {
+    font-size: 19px;
+    color: white;
+}
+/* - footer ! */

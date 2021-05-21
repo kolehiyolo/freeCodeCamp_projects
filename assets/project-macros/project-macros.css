@@ -1,0 +1,71 @@
+/* < #project-macros-div - */
+#project-macros-div {
+    /* This is the general styling of the div */
+    /* The position:fixed and the top,right properties determine that the div is at the top-right corner of the screen, but is hidden slightly out of sight */
+    /* The flex is to ensure that the items will always stick to the right-most part of the screen */
+    position: fixed;
+    top: -100px;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    z-index: 10;
+}
+
+.project-macros-btn {
+    /* This is the general styling of the buttons */
+    font-family: monospace;
+    background-color: black;
+    color: lime ;
+    border: none ;
+    padding: 5px 10px;
+    border-radius: 0px 0px 10px 10px;
+    opacity: 0.5;
+    margin-left: 5px;
+}
+
+.project-macros-btn a, .project-macros-btn p {
+    /* This turns the links in some of the buttons to look like the rest */
+    color: lime ;
+    text-decoration: none ;
+    margin: 0;
+}
+
+#project-macros-hover {
+    /* This is the invisible <div> that triggers the project-macro-btn to show up */
+    /* Simply hover on the 50px*50px top-right corner of the screen */
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 50px;
+    z-index: 5;
+    opacity: 0;
+    background-color: rgb(255, 255, 255);
+
+}
+
+#project-macros-hover, #project-macros-div {
+    /* This determines that there will be a 3s delay before the div disappears after the mouseout */
+    transition: top 1s ease-in-out 3s, width 1s ease-in-out 3s;
+} 
+
+#project-macros-hover:hover, #project-macros-hover:hover + #project-macros-div {
+    /* This is the secret sauce */
+    /* Initially, the div will be hidden just at the top of the screen */
+    /* Then, when you hover over the 50px*50px top-right corner, the #project-macros-hover will be hovered, triggering this CSS */
+    /* The div will then slide gently down into view */
+    /* Not only that, but the #project-macros-hover will grow longer, so that even if you get out of the initial 50px*50px corner to, say, hover over the buttons, the mouseout countdown won't start just yet */
+    /* This way, you can take your time with the buttons if you like */
+    /* Then once you get out of the general vicinity, the countdown will start, and after 3s, the div will hide again, and the hover-div will go back to the original size */
+    /* I AM SO WELL AWARE that this is a very janky solution lol */
+    /* I'm under the impression that there's a framework out there that has an easier way of doing this, but meh for now this is aight */
+    top: 0;
+    width: 350px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.project-macros-btn:hover {
+    /* When you hover over the buttons, the opacity will be better */
+    opacity: 1;
+}
+/* - #project-macros-div ! */

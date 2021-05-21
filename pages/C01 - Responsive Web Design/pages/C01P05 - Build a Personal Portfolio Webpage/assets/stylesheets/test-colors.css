@@ -11,6 +11,70 @@
     --level10: #FA8790;
 }
 
+* {
+    color: black;
+}
+
 body {
     background-color: var(--level1) ;
 }
+
+header {
+    background-color: var(--level2) ;
+}
+
+main {
+    background-color: var(--level3) ;
+} 
+
+footer {
+    background-color: var(--level4) ;
+} 
+
+#welcome-section {
+    background-color: var(--level5) ;
+    background-image: none;
+} 
+
+#projects {
+    background-color: var(--level6) ;
+} 
+
+#projects h2 {
+    background-color: var(--level2) ;
+} 
+
+#projects-grid {
+    background-color: var(--level3) ;
+} 
+
+#contact {
+    background-color: var(--level7) ;
+} 
+
+#contact-wrapper {
+    background-color: var(--level3) ;
+} 
+
+#socials {
+    background-color: var(--level4) ;
+} 
+
+#footer-items  {
+    background-color: var(--level5) ;
+} 
+.project-tile-title {
+    background-color: var(--level5) ;
+} 
+
+.project-tile  {
+    background-color: var(--level8) ;
+} 
+
+#navbar {
+    background-color: var(--level9) ;
+} 
+
+#welcome-msg {
+    background-color: var(--level6) ;
+} 
