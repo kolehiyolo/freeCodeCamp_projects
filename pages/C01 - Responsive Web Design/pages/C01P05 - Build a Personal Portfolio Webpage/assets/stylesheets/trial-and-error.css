@@ -57,7 +57,7 @@ footer p {
 }
 
 /* - #footer ! */
-#project-tile-img-1 {
+/* #project-tile-img-1 {
     background-image: url("https://cdn.vox-cdn.com/thumbor/HyOhm280EOQO2ubcOZCSONkDGb8=/0x0:1200x675/1200x800/filters:focal(504x242:696x434)/cdn.vox-cdn.com/uploads/chorus_image/image/68567666/Dr._STONE_Season_2_release_date_Episode_24_ending_with_Stone_Wars_Dr._STONE_manga_compared_to_the_anime_Spoilers.0.jpg");
 }
 
@@ -79,7 +79,32 @@ footer p {
 
 #project-tile-img-6 {
     background-image: url("https://www.hollywoodreporter.com/wp-content/uploads/2018/09/coming_to_netflix_in_october_2018-_the_seven_deadly_sins-_revival_of_the_commandments-publicity_-production_still-_h_2018.jpg");
+} */
+
+#project-tile-img-1 {
+    background-image: url("../images/tribute.jpg");
 }
+
+#project-tile-img-2 {
+    background-image: url("../images/random-quote-machine.png");
+}
+
+#project-tile-img-3 {
+    background-image: url("../images/calc.png");
+}
+
+#project-tile-img-4 {
+    background-image: url("../images/map.jpg");
+}
+
+#project-tile-img-5 {
+    background-image: url("../images/wiki.png");
+}
+
+#project-tile-img-6 {
+    background-image: url("../images/tic-tac-toe.png");
+}
+
 
 .tile-quotes {
     display: inline-block;
@@ -133,18 +158,16 @@ footer p {
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+    width: 100%;
 }
 
 #socials {
+    width: 100%;
     position: absolute;
     top: 57.5%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
-}
-
-#socials a {
-    padding: 0 10px;
 }
 
 #socials a {
@@ -193,3 +216,39 @@ footer {
     color: white;
 }
 /* - footer ! */
+
+.fab, .fas {
+    font-size: 25px;
+    color: white;
+}
+
+.social-link {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+    transition: all 0.4s ease-in-out ;
+    top: 0;
+}
+
+.social-link a {
+    padding-left: 10px;
+}
+
+.social-link:hover {
+    top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#navbar a {
+    height: 100%;
+    padding: 17.5px 20px;
+    box-sizing: border-box;
+}
+
+#navbar a:hover {
+    background-color: #45567D;
+}
+
+#navbar {
+    padding-right: 25px;
+}

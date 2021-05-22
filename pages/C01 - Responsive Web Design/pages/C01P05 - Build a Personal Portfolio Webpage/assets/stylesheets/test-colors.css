@@ -78,3 +78,11 @@ footer {
 #welcome-msg {
     background-color: var(--level6) ;
 } 
+
+.social-link {
+    background-color: var(--level2) ;
+} 
+
+#navbar a {
+    background-color: var(--level3) ;
+} 

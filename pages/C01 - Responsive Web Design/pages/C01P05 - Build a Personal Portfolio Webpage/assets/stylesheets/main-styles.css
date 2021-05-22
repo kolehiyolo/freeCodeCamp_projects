@@ -15,11 +15,12 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    box-sizing: border-box;
 }
 
 #navbar a {
     /* This simply maintains the spacing between the links */
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 /* - header ! */
 /* < main - */
